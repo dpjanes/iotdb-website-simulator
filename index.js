@@ -22,6 +22,4 @@
 
 "use strict";
 
-const _ = require("iotdb-helpers")
-const fs = require("iotdb-fs")
-
+module.exports = require("./lib")
