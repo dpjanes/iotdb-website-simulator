@@ -28,8 +28,6 @@ const simulator = require("..")
 const express = require("express")
 const path = require("path")
 
-console.log(simulator)
-
 _.promise.make({
     app: express(),
     simulatord: {
@@ -39,7 +37,7 @@ _.promise.make({
     .then(simulator.initialize)
     .then(simulator.website.initialize)
     .then(_.promise.block(sd => {
-        console.log("HERE");
+        console.log("+", "ready");
     }))
     .catch(error => {
         delete error.self;
