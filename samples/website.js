@@ -26,11 +26,14 @@ const _ = require("iotdb-helpers")
 const simulator = require("..")
 
 const express = require("express")
+const path = require("path")
+
+console.log(simulator)
 
 _.promise.make({
     app: express(),
     simulatord: {
-        website_path: "./website",
+        website_path: path.join(__dirname, "data", "website"),
     },
 })
     .then(simulator.initialize)
