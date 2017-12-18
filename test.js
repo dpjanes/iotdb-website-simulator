@@ -23,5 +23,20 @@
 "use strict";
 
 const _ = require("iotdb-helpers")
-const fs = require("iotdb-fs")
+const simulator = require(".")
 
+const express = require("express")
+
+_.promise.make({
+    app: express(),
+    path: "./website",
+})
+    .then(simulator.website.initialize)
+    .then(_.promise.block(sd => {
+        console.log("HERE");
+    }))
+    .catch(error => {
+        delete error.self;
+
+        console.log("#", error);
+    })
