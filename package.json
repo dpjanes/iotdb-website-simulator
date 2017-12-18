@@ -1,0 +1,34 @@
+{
+    "author": "David P. Janes <davidjanes@iotdb.org> (https://iotdb.org)", 
+    "bugs": {
+        "url": "https://github.com/dpjanes/iotdb-website-simulator/issues"
+    }, 
+    "dependencies": {
+        "iotdb-helpers": ">=3.0.0"
+    }, 
+    "description": "IOTDB Module", 
+    "devDependencies": {
+        "grunt": "", 
+        "grunt-contrib-jshint": "", 
+        "grunt-contrib-nodeunit": "", 
+        "grunt-contrib-uglify": "", 
+        "grunt-contrib-watch": "", 
+        "grunt-jsbeautifier": "",
+        "jshint-stylish": "", 
+        "load-grunt-tasks": "", 
+        "request": ""
+    }, 
+    "homepage": "https://github.com/dpjanes/node-iotdb",
+    "license": "Apache-2.0", 
+    "main": "index.js", 
+    "name": "iotdb-website-simulator", 
+    "private": false, 
+    "repository": {
+        "type": "git", 
+        "url": "https://github.com/dpjanes/iotdb-website-simulator"
+    }, 
+    "scripts": {
+        "test": "grunt"
+    }, 
+    "version": "1.0.0"
+}
