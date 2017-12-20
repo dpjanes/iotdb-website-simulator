@@ -28,15 +28,12 @@ const express = require("iotdb-express")
 
 const path = require("path")
 
-_.promise.make({
-    simulatord: {
-        website_path: path.join(__dirname, "data", "website"),
-    },
-})
+_.promise.make({})
     .then(express.initialize)
     .then(express.listen.http.p(null, 3003))
     .then(simulator.initialize)
-    .then(simulator.website.initialize)
+    .then(_.promise.add("path", path.join(__dirname, "data", "website")))
+    .then(simulator.website)
     .then(_.promise.block(sd => {
         console.log("+", "ready", _.values(sd.servers).map(server => server.url));
     }))
