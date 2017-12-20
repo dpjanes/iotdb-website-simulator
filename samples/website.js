@@ -24,20 +24,21 @@
 
 const _ = require("iotdb-helpers")
 const simulator = require("..")
+const express = require("iotdb-express")
 
-const express = require("express")
 const path = require("path")
 
 _.promise.make({
-    app: express(),
     simulatord: {
         website_path: path.join(__dirname, "data", "website"),
     },
 })
+    .then(express.initialize)
+    .then(express.listen.http.p(null, 3003))
     .then(simulator.initialize)
     .then(simulator.website.initialize)
     .then(_.promise.block(sd => {
-        console.log("+", "ready");
+        console.log("+", "ready", _.values(sd.servers).map(server => server.url));
     }))
     .catch(error => {
         delete error.self;
