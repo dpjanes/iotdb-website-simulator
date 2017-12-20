@@ -32,8 +32,7 @@ _.promise.make({})
     .then(express.initialize)
     .then(express.listen.http.p(null, 3003))
     .then(simulator.initialize)
-    .then(_.promise.add("path", path.join(__dirname, "data", "website")))
-    .then(simulator.website)
+    .then(simulator.website.p(path.join(__dirname, "data", "website")))
     .then(_.promise.block(sd => {
         console.log("+", "ready", _.values(sd.servers).map(server => server.url));
     }))
