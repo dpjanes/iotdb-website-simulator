@@ -3,13 +3,16 @@
     "bugs": {
         "url": "https://github.com/dpjanes/iotdb-website-simulator/issues"
     }, 
+    "bin": {
+        "website-simulator": "./bin/website-simulator.js"
+    },
     "dependencies": {
         "body-parser": "~1.18.2", 
         "iotdb-errors": "~3.0.6", 
         "iotdb-express": "~1.0.2", 
         "iotdb-helpers": "~3.1.23"
     }, 
-    "description": "IOTDB Module", 
+    "description": "Simulate a website, typically for testing", 
     "devDependencies": {
         "grunt": "~1.0.1", 
         "grunt-contrib-jshint": "~1.1.0", 
