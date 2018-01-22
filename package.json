@@ -9,9 +9,9 @@
     "dependencies": {
         "body-parser": "~1.18.2", 
         "express-fileupload": "~0.3.0", 
-        "iotdb-errors": "~3.0.6", 
-        "iotdb-express": "~1.0.2", 
-        "iotdb-helpers": "~3.1.23"
+        "iotdb-errors": "~3.1.6", 
+        "iotdb-express": "~1.0.10", 
+        "iotdb-helpers": "~3.2.2"
     }, 
     "description": "Simulate a website, typically for testing", 
     "devDependencies": {
