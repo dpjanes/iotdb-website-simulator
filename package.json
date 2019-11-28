@@ -7,24 +7,14 @@
         "url": "https://github.com/dpjanes/iotdb-website-simulator/issues"
     }, 
     "dependencies": {
-        "body-parser": "~1.18.2", 
+        "body-parser": "~1.19.0", 
         "express-fileupload": "~0.3.0", 
-        "iotdb-errors": "~3.1.6", 
-        "iotdb-express": "~1.0.10", 
-        "iotdb-helpers": "~3.2.2"
+        "iotdb-errors": "~3.1.9", 
+        "iotdb-express": "~1.0.23", 
+        "iotdb-fs": "~2.0.1", 
+        "iotdb-helpers": "~3.4.3"
     }, 
     "description": "Simulate a website, typically for testing", 
-    "devDependencies": {
-        "grunt": "~1.0.1", 
-        "grunt-contrib-jshint": "~1.1.0", 
-        "grunt-contrib-nodeunit": "~1.0.0", 
-        "grunt-contrib-uglify": "~3.3.0", 
-        "grunt-contrib-watch": "~1.0.0", 
-        "grunt-jsbeautifier": "~0.2.13", 
-        "jshint-stylish": "~2.2.1", 
-        "load-grunt-tasks": "~3.5.2", 
-        "request": "~2.83.0"
-    }, 
     "homepage": "https://github.com/dpjanes/node-iotdb", 
     "license": "Apache-2.0", 
     "main": "index.js", 
